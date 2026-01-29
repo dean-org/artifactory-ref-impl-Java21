@@ -188,7 +188,7 @@ COPY /src/auth/* ${regproc_jar_path}/
 
 COPY ./configure.sh ${work_dir}/
 
-COPY pom.xml ${work_dir}/
+COPY ./pom.xml ${work_dir}/
 
 RUN cd ${work_dir} && mvn dependency:resolve && mvn clean install
 
